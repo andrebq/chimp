@@ -7,7 +7,7 @@ This project tries to give to Go some automation tools. Using the simplicity and
 ## Requirements:
 
 A working go installation and the goscript tool, which allows go to be used as a script language. See: 
-[GoScript]("https://github.com/kless/goscript" "GoScript") to more information on how to install GoScript
+[GoScript](https://github.com/kless/goscript "GoScript") to more information on how to install GoScript
 
 ## Usage:
 
