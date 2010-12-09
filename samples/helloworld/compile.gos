@@ -1,0 +1,18 @@
+#!/usr/bin/goscript
+/* This is a goscript (see: https://github.com/kless/goscript) that
+ imports chimp library and tries to compile some go code */
+
+package main
+
+import (
+    "gochimp"
+)
+
+ 
+func main() {
+    tl := chimp.NewLog("test")
+    ct := &chimp.CompileTask{Files:[]string{"test.go"}, Target:"test.bin"}
+    clean := &chimp.CleanFiles{Files:ct.GetObjectFiles()}
+    ct.Run(tl)
+    clean.Run(tl)
+}
