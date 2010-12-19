@@ -1,4 +1,3 @@
-#!/usr/bin/goscript
 /* This is a goscript (see: https://github.com/kless/goscript) that
  imports chimp library and tries to compile some go code */
 

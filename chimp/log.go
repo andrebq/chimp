@@ -7,7 +7,7 @@ import (
 )
 
 var ( 
-    Stderr = os.Stderr
+    Stderr = os.Stdout
 )
 
 type TaskLogger struct {
