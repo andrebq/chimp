@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
-    fmt.Printf("Hello World\nCompiled form Goat\n")
+    sayHello()
+    fmt.Printf("Compiled form Goat\n")
 }

@@ -11,8 +11,8 @@ import (
  
 func main() {
     tl := chimp.NewLog("test")
-    ct := &chimp.CompileTask{Files:[]string{"test.go"}, Target:"test.bin"}
-    clean := &chimp.CleanFiles{Files:ct.GetObjectFiles()}
-    ct.Run(tl)
-    clean.Run(tl)
+    ct := &chimp.CompileTask{Files:[]string{"test.go", "another.go"}}
+    lt := &chimp.LinkTask{Ct:ct, Target:"test.bin", Includes:nil}
+    clean := &chimp.CleanFiles{Files:lt.GetObjectFiles()}
+    chimp.NewChain(ct, lt, clean).Run(tl)
 }

@@ -1,0 +1,2 @@
+#Making .go directories no tracked
+*.go/
